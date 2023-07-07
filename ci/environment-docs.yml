@@ -1,0 +1,12 @@
+name: cmweather-dev
+channels:
+  - conda-forge
+dependencies:
+  - numpydoc
+  - pydata-sphinx-theme
+  - nbsphinx
+  - ipython
+  - ipykernel
+  - netcdf4
+  - xarray
+  - pooch
