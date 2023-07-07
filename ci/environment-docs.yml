@@ -10,3 +10,7 @@ dependencies:
   - netcdf4
   - xarray
   - pooch
+  - pip
+  - pip:
+      - sphinxext-opengraph
+      - -e ..
