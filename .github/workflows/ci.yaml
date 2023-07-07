@@ -50,10 +50,6 @@ jobs:
           cache-downloads: true
           python-version: ${{ matrix.python-version }}
 
-      - name: Fetch all history for all tags and branches
-        run: |
-          git fetch --prune --unshallow
-
       - name: Set up conda environment
         shell: bash -l {0}
         run: |
