@@ -1,4 +1,4 @@
-name: sandbox-devel
+name: cmweather-dev
 channels:
   - conda-forge
 dependencies:

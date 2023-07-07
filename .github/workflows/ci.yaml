@@ -2,17 +2,18 @@ name: CI
 on:
   push:
     branches:
-      - "main"
+      - 'main'
   pull_request:
     branches:
-      - "*"
+      - '*'
   schedule:
-    - cron: "0 0 * * *" # Daily “At 00:00”
+    - cron: '0 0 * * *' # Daily “At 00:00”
   workflow_dispatch: # allows you to trigger manually
 
 jobs:
   build:
     name: Build (${{ matrix.python-version }}, ${{ matrix.os }})
+    if: github.repository == 'openradar/cmweather'
     runs-on: ${{ matrix.os }}
     defaults:
       run:
@@ -20,8 +21,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ["ubuntu-latest"]
-        python-version: ["3.7", "3.8", "3.9"]
+        os: ['ubuntu-latest']
+        python-version: ['3.8', '3.9', '3.10', '3.11']
     steps:
       - uses: actions/checkout@v2
         with:
@@ -40,22 +41,22 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/conda_pkgs_dir
-          key:
-            ${{ runner.os }}-conda-py${{ matrix.python-version }}-${{
+          key: ${{ runner.os }}-conda-py${{ matrix.python-version }}-${{
             hashFiles('ci/requirements/**.yml') }}
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: mamba-org/setup-micromamba@v1
         with:
-          channels: conda-forge
-          channel-priority: strict
-          mamba-version: "*"
-          activate-environment: sandbox-devel
-          auto-update-conda: false
+          environment-file: ci/environment.yml
+          activate-environment: cmweather-dev
+          cache-downloads: true
           python-version: ${{ matrix.python-version }}
-          use-only-tar-bz2: true
 
       - name: Install conda dependencies
         run: |
           mamba env update -f $CONDA_ENV_FILE
+
+      - name: Fetch all history for all tags and branches
+        run: |
+          git fetch --prune --unshallow
 
       - name: Set up conda environment
         shell: bash -l {0}
@@ -86,7 +87,7 @@ jobs:
       - name: set up Python 3.8
         uses: actions/setup-python@v2
         with:
-            python-version: 3.8
+          python-version: 3.8
 
       - name: Install package
         run: |
