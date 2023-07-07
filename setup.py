@@ -11,7 +11,7 @@ with open('README.rst') as f:
     long_description = f.read()
 
 setup(
-    maintainer="Open Radar Community",
+    maintainer='Open Radar Community',
     maintainer_email='mgrover@anl.gov',
     python_requires='>=3.6',
     classifiers=[
@@ -35,10 +35,10 @@ setup(
     name='cmweather',
     packages=find_packages(include=['cmweather', 'cmweather.*']),
     url='https://github.com/openradar/cmweather',
-      project_urls={
+    project_urls={
         'Documentation': 'https://github.com/openradar/cmweather',
         'Source': 'https://github.com/openradar/cmweather',
-        'Tracker': 'https://github.com/openradar/cmweather/issues'
+        'Tracker': 'https://github.com/openradar/cmweather/issues',
     },
     zip_safe=False,
 )

@@ -1,5 +1,6 @@
 import xarray as xr
 
+
 def my_mean_func(data):
     """
     Computes mean of an xarray object.
