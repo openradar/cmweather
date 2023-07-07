@@ -18,16 +18,16 @@ def yuv_rainbow_24(nc):
     v = 0.55 * np.sin(path2) + 0.1
 
     rgb_from_yuv = np.array([[1, 0, 1.13983], [1, -0.39465, -0.58060], [1, 2.03211, 0]])
-    cmap_dict = {"blue": [], "green": [], "red": []}
+    cmap_dict = {'blue': [], 'green': [], 'red': []}
     for i in range(len(y)):
         yuv = np.array([y[i], u[i], v[i]])
         rgb = rgb_from_yuv.dot(yuv)
         red_tuple = (i / (len(y) - 1.0), rgb[0], rgb[0])
         green_tuple = (i / (len(y) - 1.0), rgb[1], rgb[1])
         blue_tuple = (i / (len(y) - 1.0), rgb[2], rgb[2])
-        cmap_dict["blue"].append(blue_tuple)
-        cmap_dict["red"].append(red_tuple)
-        cmap_dict["green"].append(green_tuple)
+        cmap_dict['blue'].append(blue_tuple)
+        cmap_dict['red'].append(red_tuple)
+        cmap_dict['green'].append(green_tuple)
 
     return cmap_dict
 
@@ -39,26 +39,22 @@ def yuv_rainbow_24(nc):
 # True colors of oceanography. Oceanography, 29(3), 10.
 
 data_dir = os.path.split(__file__)[0]
-bal_rgb_vals = np.genfromtxt(os.path.join(data_dir, "balance-rgb.txt"))
+bal_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'balance-rgb.txt'))
 
 
 # "Spectral"-like colormaps for radar reflectivity
 # ChaseSpectral developed by Randy Chase with assistance from Sam Gardner and Jonathan Thielen
 # SpectralExtended developed by Jonathan Thielen based on ChaseSpectral
 
-chase_spectral_rgb_vals = np.genfromtxt(
-    os.path.join(data_dir, "chase-spectral-rgb.txt")
-)
-spectral_ext_rgb_vals = np.genfromtxt(
-    os.path.join(data_dir, "spectral-extended-rgb.txt")
-)
+chase_spectral_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'chase-spectral-rgb.txt'))
+spectral_ext_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'spectral-extended-rgb.txt'))
 
 
 # HomeyerRainbow developed by Cameron Homeyer with assistance from Bobby Jackson
 
 datad = {
-    "HomeyerRainbow": yuv_rainbow_24(15),
-    "balance": bal_rgb_vals,
-    "ChaseSpectral": chase_spectral_rgb_vals,
-    "SpectralExtended": spectral_ext_rgb_vals,
+    'HomeyerRainbow': yuv_rainbow_24(15),
+    'balance': bal_rgb_vals,
+    'ChaseSpectral': chase_spectral_rgb_vals,
+    'SpectralExtended': spectral_ext_rgb_vals,
 }

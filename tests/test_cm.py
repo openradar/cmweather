@@ -12,10 +12,10 @@ def test_colormaps_exist():
 
 
 def test_colormaps_registered():
-    cmap = matplotlib.colormaps.get_cmap("NWSRef")
+    cmap = matplotlib.colormaps.get_cmap('NWSRef')
     assert isinstance(cmap, matplotlib.colors.Colormap)
 
-    cmap = matplotlib.colormaps.get_cmap("NWSRef_r")
+    cmap = matplotlib.colormaps.get_cmap('NWSRef_r')
     assert isinstance(cmap, matplotlib.colors.Colormap)
 
 
@@ -36,12 +36,12 @@ def test_tuple_spec():
     spec = ((0, 1), (0, 1))
     cm._reverse_cmap_spec(spec)
 
-    cm.datad["foo"] = _seismic_data
-    cm._generate_cmap("foo", 1)
+    cm.datad['foo'] = _seismic_data
+    cm._generate_cmap('foo', 1)
     assert isinstance(cm.NWSRef_r, matplotlib.colors.Colormap)
 
 
 def test_revcmap_callable():
     # reversing a callable is not exercised in cmweather
-    data_r = cm.revcmap({"foo": lambda x: x})
-    assert data_r["foo"](0) == 1
+    data_r = cm.revcmap({'foo': lambda x: x})
+    assert data_r['foo'](0) == 1

@@ -26,8 +26,8 @@ def _generate_cmap(name, lutsize):
     spec = datad[name]
     # Generate the colormap object.
     with warnings.catch_warnings():
-        warnings.simplefilter("ignore", FutureWarning)
-        if isinstance(spec, dict) and "red" in spec.keys():
+        warnings.simplefilter('ignore', FutureWarning)
+        if isinstance(spec, dict) and 'red' in spec.keys():
             return colors.LinearSegmentedColormap(name, spec, lutsize)
         else:
             return colors.LinearSegmentedColormap.from_list(name, spec, lutsize)
@@ -38,7 +38,7 @@ cmap_d = dict()
 # reverse all the colormaps.
 # reversed colormaps have '_r' appended to the name.
 
-LUTSIZE = mpl.rcParams["image.lut"]
+LUTSIZE = mpl.rcParams['image.lut']
 
 # need this list because datad is changed in loop
 _cmapnames = list(datad.keys())
@@ -48,7 +48,7 @@ _cmapnames = list(datad.keys())
 for cmapname in _cmapnames:
     spec = datad[cmapname]
     spec_reversed = _reverse_cmap_spec(spec)
-    datad[cmapname + "_r"] = spec_reversed
+    datad[cmapname + '_r'] = spec_reversed
 
 # Precache the cmaps with ``lutsize = LUTSIZE`` ...
 

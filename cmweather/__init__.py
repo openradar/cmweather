@@ -63,4 +63,4 @@ except DistributionNotFound:
     # package is not installed
     _version__ = '0.0.0'
 
-from . import cm, cm_colorblind # noqa
+from . import cm, cm_colorblind  # noqa
