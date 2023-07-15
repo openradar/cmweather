@@ -1,4 +1,4 @@
-name: cmweather-dev
+name: cmweather-docs
 channels:
   - conda-forge
 dependencies:

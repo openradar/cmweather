@@ -1,5 +1,2 @@
-netcdf4
-xarray
-pooch
 numpy
 matplotlib

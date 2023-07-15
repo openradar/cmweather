@@ -1,10 +1,10 @@
-.. image:: https://img.shields.io/github/workflow/status/openradar/cmweather/CI?logo=github&style=for-the-badge
-    :target: https://github.com/openradar/cmweather/actions
-    :alt: GitHub Workflow CI Status
+.. image:: https://github.com/openradar/cmweather/actions/workflows/ci.yaml/badge.svg
+    :target: https://github.com/openradar/cmweather/actions/workflows/ci.yaml
+    :alt: Continuous Integration Status
 
-.. image:: https://img.shields.io/github/workflow/status/openradar/cmweather/code-style?label=Code%20Style&style=for-the-badge
-    :target: https://github.com/openradar/cmweather/actions
-    :alt: GitHub Workflow Code Style Status
+.. image:: https://github.com/openradar/cmweather/actions/workflows/linting.yaml/badge.svg
+    :target: https://github.com/openradar/cmweather/actions/workflows/linting.yaml
+    :alt: Code Style Status
 
 .. image:: https://img.shields.io/codecov/c/github/openradar/cmweather.svg?style=for-the-badge
     :target: https://codecov.io/gh/openradar/cmweather
