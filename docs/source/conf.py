@@ -75,7 +75,7 @@ master_doc = 'index'
 # General information about the project.
 project = 'cmweather'
 current_year = datetime.datetime.now().year
-copyright = f'2020-{current_year}, Open Radar Community'
+copyright = f'2023-{current_year}, Open Radar Community'
 author = 'Open Radar Community'
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
