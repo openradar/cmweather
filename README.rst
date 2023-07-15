@@ -34,7 +34,7 @@ For a development install, do the following in the repository directory:
 .. code-block:: bash
 
     conda env update -f ci/environment.yml
-    conda activate sandbox-devel
+    conda activate cmweather-dev
     python -m pip install -e .
 
 Also, please install `pre-commit` hooks from the root directory of the created project by running::
