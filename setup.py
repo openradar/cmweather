@@ -42,4 +42,8 @@ setup(
         'Tracker': 'https://github.com/openradar/cmweather/issues',
     },
     zip_safe=False,
+    use_scm_version={
+        'version_scheme': 'post-release',
+        'local_scheme': 'dirty-tag',
+    },
 )
