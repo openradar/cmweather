@@ -28,6 +28,7 @@ setup(
     ],
     description='A library of useful colormaps when visualizing weather and climate data, with numerous color vision deficiency friendly options',
     install_requires=requirements,
+    setup_requires='setuptools_scm',
     license='MIT license',
     long_description=long_description,
     include_package_data=True,
