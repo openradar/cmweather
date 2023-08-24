@@ -9,6 +9,9 @@
 .. image:: https://img.shields.io/codecov/c/github/openradar/cmweather.svg?style=for-the-badge
     :target: https://codecov.io/gh/openradar/cmweather
 
+.. image:: https://anaconda.org/conda-forge/cmweather/badges/version.svg
+    :target: https://anaconda.org/conda-forge/cmweather
+
 .. If you want the following badges to be visible, please remove this line, and unindent the lines below
     .. image:: https://img.shields.io/readthedocs/cmweather/latest.svg?style=for-the-badge
         :target: https://cmweather.readthedocs.io/en/latest/?badge=latest
