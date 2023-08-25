@@ -7,7 +7,7 @@ There are also Radar related colormaps and colorblind friendly radar
 colormaps for plotting.
 
 Available colormaps, reversed versions (_r) are also provided, these
-colormaps are available within matplotlib with names 'COLORMAP':
+colormaps are available within matplotlib with names:
 
     * BlueBrown10
     * BlueBrown11
@@ -62,5 +62,6 @@ from . import cm, cm_colorblind  # noqa
 # Get the version
 try:
     __version__ = get_distribution(__name__).version
+    print(__version__)
 except DistributionNotFound:  # pragma: no cover
     __version__ = '0.0.0'  # pragma: no cover
