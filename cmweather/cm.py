@@ -2,7 +2,7 @@
 Radar related colormaps.
 
 Available colormaps, reversed versions (_r) are also provided, these
-colormaps are available within matplotlib with names 'pyart_COLORMAP':
+colormaps are available within matplotlib:
 
     * BlueBrown10
     * BlueBrown11

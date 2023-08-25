@@ -2,7 +2,7 @@
 Colorblind friendly radar colormaps
 
 Available colormaps, reversed versions are also provided, these
-colormaps are available within matplotlib with names pyart_COLORMAP':
+colormaps are available within matplotlib:
 
     * HomeyerRainbow
     * balance

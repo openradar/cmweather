@@ -7,7 +7,7 @@ from setuptools import find_packages, setup
 with open('requirements.txt') as f:
     requirements = f.read().strip().split('\n')
 
-with open('README.rst') as f:
+with open('README.md') as f:
     long_description = f.read()
 
 setup(
@@ -42,4 +42,8 @@ setup(
         'Tracker': 'https://github.com/openradar/cmweather/issues',
     },
     zip_safe=False,
+    use_scm_version={
+        'version_scheme': 'post-release',
+        'local_scheme': 'dirty-tag',
+    },
 )

@@ -43,6 +43,11 @@ jobs:
           path: ~/conda_pkgs_dir
           key: ${{ runner.os }}-conda-py${{ matrix.python-version }}-${{
             hashFiles('ci/requirements/**.yml') }}
+
+      - name: Fetch all history for all tags and branches
+        run: |
+          git fetch --prune
+
       - uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: ci/environment.yml
