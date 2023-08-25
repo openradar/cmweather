@@ -1,31 +1,6 @@
 # cmweather
 
-```{image} https://github.com/openradar/cmweather/actions/workflows/ci.yaml/badge.svg
-:alt: Continuous Integration Status
-:target: https://github.com/openradar/cmweather/actions/workflows/ci.yaml
-```
-
-```{image} https://github.com/openradar/cmweather/actions/workflows/linting.yaml/badge.svg
-:alt: Code Style Status
-:target: https://github.com/openradar/cmweather/actions/workflows/linting.yaml
-```
-
-```{image} https://img.shields.io/codecov/c/github/openradar/cmweather.svg?style=for-the-badge
-:target: https://codecov.io/gh/openradar/cmweather
-```
-
-% If you want the following badges to be visible, please remove this line, and unindent the lines below
-% .. image:: https://img.shields.io/readthedocs/cmweather/latest.svg?style=for-the-badge
-% :target: https://cmweather.readthedocs.io/en/latest/?badge=latest
-% :alt: Documentation Status
-%
-% .. image:: https://img.shields.io/pypi/v/cmweather.svg?style=for-the-badge
-% :target: https://pypi.org/project/cmweather
-% :alt: Python Package Index
-%
-% .. image:: https://img.shields.io/conda/vn/conda-forge/cmweather.svg?style=for-the-badge
-% :target: https://anaconda.org/conda-forge/cmweather
-% :alt: Conda Version
+[![CI Status](https://github.com/openradar/cmweather/actions/workflows/ci.yaml/badge.svg)](https://github.com/openradar/cmweather/actions/workflows/ci.yaml) [![code-style](https://github.com/openradar/cmweather/actions/workflows/linting.yaml/badge.svg)](https://github.com/openradar/cmweather/actions/workflows/linting.yaml) [![CodeCov](https://img.shields.io/codecov/c/github/openradar/cmweather.svg?style=for-the-badge)](https://codecov.io/gh/openradar/cmweather)[![Conda Package](https://anaconda.org/conda-forge/cmweather/badges/version.svg)](https://anaconda.org/conda-forge/cmweather)
 
 ## Motivation
 
@@ -62,17 +37,3 @@ Also, please install `pre-commit` hooks from the root directory of the created p
 ```
 pre-commit install
 ```
-
-These code style pre-commit hooks (black, isort, flake8, ...) will run every time you are about to commit code.
-
-% If you want the following badges to be visible, please remove this line, and unindent the lines below
-% Re-create notebooks with Pangeo Binder
-% --------------------------------------
-%
-% Try notebooks hosted in this repo on Pangeo Binder. Note that the session is ephemeral.
-% Your home directory will not persist, so remember to download your notebooks if you
-% made changes that you need to use at a later time!
-%
-% .. image:: https://img.shields.io/static/v1.svg?logo=Jupyter&label=Pangeo+Binder&message=GCE+us-central1&color=blue&style=for-the-badge
-% :target: https://binder.pangeo.io/v2/gh/openradar/cmweather/master?urlpath=lab
-% :alt: Binder
