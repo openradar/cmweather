@@ -1,18 +1,19 @@
-.. include:: ../../README.md
+```{include} ../../README.md
 
-Contents:
-=========
+```
 
-.. toctree::
-   :maxdepth: 2
+```{toctree}
+---
+maxdepth: 2
+caption: Getting Started
+hidden:
+---
+usage
+contributing
+api
+```
 
-   usage
-   contributing
-
-
-Feedback
-========
-
+## Feedback
 
 If you encounter any errors or problems with **cmweather**,
 please open an issue at the GitHub http://github.com/openradar/cmweather main repository.
