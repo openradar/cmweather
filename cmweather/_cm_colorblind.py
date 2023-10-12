@@ -52,9 +52,21 @@ spectral_ext_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'spectral-extended-
 
 # HomeyerRainbow developed by Cameron Homeyer with assistance from Bobby Jackson
 
+# Crameri and Michelson colormaps were modified Oleron and Roma colormaps from
+# the work done in Crameri et al. (2020), but modified by Michelson for
+# depolarization ratio and rhohv moments in radar.
+
+cm_oleron_depol_vals = np.genfromtxt(
+    os.path.join(data_dir, 'crameri-michelson-oleron-depol.txt'))
+
+cm_roma_rhohv_vals = np.genfromtxt(
+    os.path.join(data_dir, 'crameri-michelson-roma-rhohv.txt'))
+
 datad = {
     'HomeyerRainbow': yuv_rainbow_24(15),
     'balance': bal_rgb_vals,
     'ChaseSpectral': chase_spectral_rgb_vals,
     'SpectralExtended': spectral_ext_rgb_vals,
+    'CM_depol': cm_oleron_depol_vals,
+    'CM_rhohv': cm_roma_rhohv_vals,
 }

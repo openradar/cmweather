@@ -53,6 +53,8 @@ Colorblind friendly
     * balance
     * ChaseSpectral
     * SpectralExtended
+    * CM_depol
+    * CM_rhohv
 
 """
 from pkg_resources import DistributionNotFound, get_distribution

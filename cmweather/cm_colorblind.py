@@ -8,6 +8,19 @@ colormaps are available within matplotlib:
     * balance
     * ChaseSpectral
     * SpectralExtended
+    * CM_depol
+    * CM_rhohv
+
+CM_dopol and CM_rhohv are based on the work by:
+
+Crameri, F., G.E. Shephard and P.J. Heron, 2020: The misuse of colour in science
+communication. Nat Commun 11, 5444 https://doi.org/10.1038/s41467-020-19160-7
+
+Michelson D., B. Hansen, D. Jacques, F. Lemay, and P Rodriguez, 2020: Monitoring
+the impact of weather radar data quality control for quantitative application
+at the continental scale. Meteorol. Appl. 2020;27:e1929. 12 pp.
+https://doi.org/10.1002/met.1929
+
 """
 
 import warnings

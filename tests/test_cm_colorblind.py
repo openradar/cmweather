@@ -15,6 +15,11 @@ def test_colormaps_exist():
     assert isinstance(cm_colorblind.ChaseSpectral_r, matplotlib.colors.Colormap)
     assert isinstance(cm_colorblind.SpectralExtended, matplotlib.colors.Colormap)
     assert isinstance(cm_colorblind.SpectralExtended_r, matplotlib.colors.Colormap)
+    assert isinstance(cm_colorblind.CM_depol, matplotlib.colors.Colormap)
+    assert isinstance(cm_colorblind.CM_depol_r, matplotlib.colors.Colormap)
+    assert isinstance(cm_colorblind.CM_rhohv, matplotlib.colors.Colormap)
+    assert isinstance(cm_colorblind.CM_rhohv_r, matplotlib.colors.Colormap)
+
 
 
 def test_colormaps_registered():
@@ -40,4 +45,16 @@ def test_colormaps_registered():
     assert isinstance(cmap, matplotlib.colors.Colormap)
 
     cmap = matplotlib.colormaps.get_cmap('SpectralExtended_r')
+    assert isinstance(cmap, matplotlib.colors.Colormap)
+
+    cmap = matplotlib.colormaps.get_cmap('CM_depol')
+    assert isinstance(cmap, matplotlib.colors.Colormap)
+
+    cmap = matplotlib.colormaps.get_cmap('CM_depol_r')
+    assert isinstance(cmap, matplotlib.colors.Colormap)
+
+    cmap = matplotlib.colormaps.get_cmap('CM_rhohv')
+    assert isinstance(cmap, matplotlib.colors.Colormap)
+
+    cmap = matplotlib.colormaps.get_cmap('CM_rhohv_r')
     assert isinstance(cmap, matplotlib.colors.Colormap)
