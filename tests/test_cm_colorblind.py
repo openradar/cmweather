@@ -21,7 +21,6 @@ def test_colormaps_exist():
     assert isinstance(cm_colorblind.CM_rhohv_r, matplotlib.colors.Colormap)
 
 
-
 def test_colormaps_registered():
     cmap = matplotlib.colormaps.get_cmap('HomeyerRainbow')
     assert isinstance(cmap, matplotlib.colors.Colormap)
