@@ -49,6 +49,10 @@ bal_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'balance-rgb.txt'))
 chase_spectral_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'chase-spectral-rgb.txt'))
 spectral_ext_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'spectral-extended-rgb.txt'))
 
+# Plasmidis colormap for radar correlation coefficient
+
+plasmidis_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'plasmidis-rgb.txt'))
+
 
 # HomeyerRainbow developed by Cameron Homeyer with assistance from Bobby Jackson
 
@@ -65,6 +69,7 @@ datad = {
     'balance': bal_rgb_vals,
     'ChaseSpectral': chase_spectral_rgb_vals,
     'SpectralExtended': spectral_ext_rgb_vals,
+    'plasmidis': plasmidis_rgb_vals,
     'CM_depol': cm_oleron_depol_vals,
     'CM_rhohv': cm_roma_rhohv_vals,
 }
