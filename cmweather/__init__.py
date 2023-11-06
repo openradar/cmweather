@@ -56,6 +56,7 @@ Colorblind friendly
     * SpectralExtended
     * CM_depol
     * CM_rhohv
+    * plasmidis
 
 """
 from pkg_resources import DistributionNotFound, get_distribution
