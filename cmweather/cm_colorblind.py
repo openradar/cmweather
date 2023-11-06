@@ -10,6 +10,7 @@ colormaps are available within matplotlib:
     * SpectralExtended
     * CM_depol
     * CM_rhohv
+    * plasmidis
 
 CM_dopol and CM_rhohv are based on the work by:
 
