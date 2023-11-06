@@ -51,7 +51,7 @@ spectral_ext_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'spectral-extended-
 
 # Plasmidis colormap for radar correlation coefficient
 
-plasmidis_rgb_vals = np.genfromtxt(os.path.join(data_dir, "plasmidis-rgb.txt"))
+plasmidis_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'plasmidis-rgb.txt'))
 
 
 # HomeyerRainbow developed by Cameron Homeyer with assistance from Bobby Jackson
