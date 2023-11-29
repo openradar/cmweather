@@ -20,7 +20,7 @@ jobs:
       - name: Build and test distribution
         run: |
           python setup.py sdist bdist_wheel
-          python twine check dist/*
+          python -m twine check dist/*
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@v1.8.10
         env:
