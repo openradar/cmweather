@@ -1,11 +1,11 @@
 [
   {
     "version": "dev",
-    "url": "https://cmweather.readthedocs.io/en/dev"
+    "url": "https://cmweather.readthedocs.io/en/latest"
   },
   {
-    "version": "latest",
-    "url": "https://cmweather.readthedocs.io/en/latest/",
+    "version": "stable",
+    "url": "https://cmweather.readthedocs.io/en/stable/",
     "is_latest": true
   }
 ]
