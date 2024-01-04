@@ -59,12 +59,11 @@ Colorblind friendly
     * plasmidis
 
 """
-from pkg_resources import DistributionNotFound, get_distribution
-
+from importlib.metadata import version, PackageNotFoundError
 from . import cm, cm_colorblind  # noqa
 
-# Get the version
 try:
-    __version__ = get_distribution(__name__).version
-except DistributionNotFound:  # pragma: no cover
-    __version__ = '0.0.0'  # pragma: no cover
+    __version__ = version('cmweather')
+except PackageNotFoundError:
+    # package is not installed
+    pass
