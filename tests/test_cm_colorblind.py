@@ -19,6 +19,8 @@ def test_colormaps_exist():
     assert isinstance(cm_colorblind.CM_depol_r, matplotlib.colors.Colormap)
     assert isinstance(cm_colorblind.CM_rhohv, matplotlib.colors.Colormap)
     assert isinstance(cm_colorblind.CM_rhohv_r, matplotlib.colors.Colormap)
+    assert isinstance(cm_colorblind.plasmidis, matplotlib.colors.Colormap)
+    assert isinstance(cm_colorblind.plasmidis_r, matplotlib.colors.Colormap)
 
 
 def test_colormaps_registered():
@@ -56,4 +58,10 @@ def test_colormaps_registered():
     assert isinstance(cmap, matplotlib.colors.Colormap)
 
     cmap = matplotlib.colormaps.get_cmap('CM_rhohv_r')
+    assert isinstance(cmap, matplotlib.colors.Colormap)
+
+    cmap = matplotlib.colormaps.get_cmap('plasmidis')
+    assert isinstance(cmap, matplotlib.colors.Colormap)
+
+    cmap = matplotlib.colormaps.get_cmap('plasmidis_r')
     assert isinstance(cmap, matplotlib.colors.Colormap)
