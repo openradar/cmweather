@@ -157,8 +157,8 @@ html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
     'navbar_start': ['navbar-logo', 'version-switcher'],
     'switcher': {
-        'json_url': 'https://raw.githubusercontent.com/mgrover1/cmweather/add-version-switcher/docs/source/_static/pst-versions.json',
-        'version_match': 'dev' if 'dev' in version else f'v{version}',
+        'json_url': 'https://cmweather.readthedocs.io/en/latest/_static/pst-versions.json',
+        'version_match': 'dev' if 'dev' in version else 'stable',
     },
 }
 
