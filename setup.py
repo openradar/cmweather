@@ -44,6 +44,5 @@ setup(
     zip_safe=False,
     use_scm_version={
         'version_scheme': 'post-release',
-        'local_scheme': 'dirty-tag',
     },
 )
