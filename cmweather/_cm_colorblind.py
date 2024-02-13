@@ -73,7 +73,7 @@ datad = {
     'ChaseSpectral': chase_spectral_rgb_vals,
     'SpectralExtended': spectral_ext_rgb_vals,
     'plasmidis': plasmidis_rgb_vals,
-    'turbone' : turbone_rgb_vals,
+    'turbone': turbone_rgb_vals,
     'CM_depol': cm_oleron_depol_vals,
     'CM_rhohv': cm_roma_rhohv_vals,
 }
