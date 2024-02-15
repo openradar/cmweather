@@ -54,6 +54,9 @@ spectral_ext_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'spectral-extended-
 plasmidis_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'plasmidis-rgb.txt'))
 
 
+# Turbone colormap for radar differential reflectivity
+turbone_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'turbone-rgb.txt'))
+
 # HomeyerRainbow developed by Cameron Homeyer with assistance from Bobby Jackson
 
 # Crameri and Michelson colormaps were modified Oleron and Roma colormaps from
@@ -70,6 +73,7 @@ datad = {
     'ChaseSpectral': chase_spectral_rgb_vals,
     'SpectralExtended': spectral_ext_rgb_vals,
     'plasmidis': plasmidis_rgb_vals,
+    'turbone': turbone_rgb_vals,
     'CM_depol': cm_oleron_depol_vals,
     'CM_rhohv': cm_roma_rhohv_vals,
 }

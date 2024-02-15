@@ -57,6 +57,7 @@ Colorblind friendly
     * CM_depol
     * CM_rhohv
     * plasmidis
+    * turbone
 
 """
 from importlib.metadata import version, PackageNotFoundError
