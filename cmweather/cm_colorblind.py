@@ -11,6 +11,7 @@ colormaps are available within matplotlib:
     * CM_depol
     * CM_rhohv
     * plasmidis
+    * bgyp
     * turbone
 
 CM_dopol and CM_rhohv are based on the work by:
