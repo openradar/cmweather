@@ -68,6 +68,12 @@ def test_colormaps_registered():
     cmap = matplotlib.colormaps.get_cmap('plasmidis_r')
     assert isinstance(cmap, matplotlib.colors.Colormap)
 
+    cmap = matplotlib.colormaps.get_cmap('bgyp')
+    assert isinstance(cmap, matplotlib.colors.Colormap)
+
+    cmap = matplotlib.colormaps.get_cmap('bgyp_r')
+    assert isinstance(cmap, matplotlib.colors.Colormap)
+
     cmap = matplotlib.colormaps.get_cmap('turbone')
     assert isinstance(cmap, matplotlib.colors.Colormap)
 

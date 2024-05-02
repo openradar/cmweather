@@ -50,8 +50,10 @@ chase_spectral_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'chase-spectral-r
 spectral_ext_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'spectral-extended-rgb.txt'))
 
 # Plasmidis colormap for radar correlation coefficient
-
 plasmidis_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'plasmidis-rgb.txt'))
+
+# bgyp colormap for radar correlation coefficient
+bgyp_rgb_vals = np.genfromtxt(os.path.join(data_dir, 'bgyp-rgb.txt'))
 
 
 # Turbone colormap for radar differential reflectivity
@@ -73,6 +75,7 @@ datad = {
     'ChaseSpectral': chase_spectral_rgb_vals,
     'SpectralExtended': spectral_ext_rgb_vals,
     'plasmidis': plasmidis_rgb_vals,
+    'bgyp': bgyp_rgb_vals,
     'turbone': turbone_rgb_vals,
     'CM_depol': cm_oleron_depol_vals,
     'CM_rhohv': cm_roma_rhohv_vals,
