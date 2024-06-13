@@ -24,6 +24,11 @@ the impact of weather radar data quality control for quantitative application
 at the continental scale. Meteorol. Appl. 2020;27:e1929. 12 pp.
 https://doi.org/10.1002/met.1929
 
+Balance was created by:
+
+Thyng, K. M., Greene, C. A., Hetland, R. D., Zimmerle, H. M., and DiMarco, S. F.
+, 2016: True colors of oceanography. Oceanography, 29(3), 10 pp.
+
 """
 
 import warnings
