@@ -9,8 +9,8 @@ caption: Getting Started
 hidden:
 ---
 usage
-contributing
 api
+contributing
 ```
 
 ## Feedback

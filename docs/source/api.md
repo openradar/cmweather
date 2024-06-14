@@ -26,9 +26,9 @@ from cmweather.cm_colorblind import cmap_d
 
 cm_names = [cnm for cnm in cmap_d.keys() if not cnm.endswith('_r')]
 
-for cm_name in cm_names:   
-    display(HTML(cmap_d[cm_name]._repr_html_()))    
-```    
+for cm_name in cm_names:
+    display(HTML(cmap_d[cm_name]._repr_html_()))
+```
 
 ## More Weather Colormaps (`cmweather.cm`)
 
@@ -48,6 +48,6 @@ from cmweather.cm import cmap_d
 cm_names = [cnm for cnm in cmap_d.keys() if not cnm.endswith('_r')]
 cm_names.sort()
 
-for cm_name in cm_names:   
-    display(HTML(cmap_d[cm_name]._repr_html_()))   
+for cm_name in cm_names:
+    display(HTML(cmap_d[cm_name]._repr_html_()))
 ```
