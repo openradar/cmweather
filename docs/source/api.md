@@ -23,11 +23,10 @@ kernelspec:
 
 from IPython.display import HTML
 from cmweather.cm_colorblind import cmap_d
+from cmweather.cm import _get_cmap_gallery_html
 
-cm_names = [cnm for cnm in cmap_d.keys() if not cnm.endswith('_r')]
-
-for cm_name in cm_names:
-    display(HTML(cmap_d[cm_name]._repr_html_()))
+html_str = _get_cmap_gallery_html(cmap_d, sort_d=False)
+display(HTML(html_str))
 ```
 
 ## More Weather Colormaps (`cmweather.cm`)
@@ -43,11 +42,8 @@ for cm_name in cm_names:
 :tags: [remove-input]
 
 from IPython.display import HTML
-from cmweather.cm import cmap_d
+from cmweather.cm import cmap_d, _get_cmap_gallery_html
 
-cm_names = [cnm for cnm in cmap_d.keys() if not cnm.endswith('_r')]
-cm_names.sort()
-
-for cm_name in cm_names:
-    display(HTML(cmap_d[cm_name]._repr_html_()))
+html_str = _get_cmap_gallery_html(cmap_d, sort_d=True)
+display(HTML(html_str))
 ```

@@ -143,3 +143,54 @@ for name, cmap in cmap_d.items():
         mpl.colormaps.register(name=name, cmap=cmap, force=True)
     except AttributeError:
         mpl.cm.register_cmap(name=name, cmap=cmap)
+
+
+def _get_cmap_gallery_html(cmaps, sort_d=False):
+    """
+    return a html str representation of a colormap dictionary
+
+    use with either cmap_d from either .cm or .cm_colorblind,
+    reversed colormaps are excluded. The html repr of
+    individual colormaps is based on what the base
+    matplotlib.colors.Colormap._repr_html_() returns but
+    without the "over", "under" and "bad" labels.
+
+    Parameters
+    ----------
+    cmaps: dict
+        a dictionary of colormaps
+    sort_d: bool
+        if True (default False), will sort the cmaps by name
+
+    Returns
+    -------
+    str
+        the concatenated html str for the input colormap dict
+
+    """
+    import base64
+
+    def _get_cmap_div(cmap):
+        png_bytes = cmap._repr_png_()
+        png_base64 = base64.b64encode(png_bytes).decode('ascii')
+
+        return (
+            '<div style="vertical-align: middle;">'
+            f'<strong>{cmap.name}</strong> '
+            '</div>'
+            '<div class="cmap"><img '
+            f'alt="{cmap.name} colormap" '
+            f'title="{cmap.name}" '
+            'style="border: 1px solid #555;" '
+            f'src="data:image/png;base64,{png_base64}"></div>'
+        )
+
+    cm_names = [cnm for cnm in cmaps.keys() if not cnm.endswith('_r')]
+    if sort_d:
+        cm_names.sort()
+
+    html_str = ''
+    for cm_name in cm_names:
+        html_str += _get_cmap_div(cmaps[cm_name])
+
+    return html_str
