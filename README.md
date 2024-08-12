@@ -8,6 +8,16 @@ The motivation for this package is to contain weather maps relevant to the weath
 
 While not all of the colormaps are color vision deficiency (CVD) friendly, we do include CVD friendly colormaps, and encourage users to use these when possible.
 
+## Citing
+
+When using the CVD friendly colormaps, please consider citing:
+
+Sherman, Z., and Coauthors, 2024: Effective Visualization of Radar Data for Users Impacted by Color Vision Deficiency. Bull. Amer. Meteor. Soc., 105, E1479–E1489, https://doi.org/10.1175/BAMS-D-23-0056.1.
+
+And when using the CVD friendly cmocean balance colormap, please cite:
+
+Thyng, K. M., C. A. Greene, R. D. Hetland, H. M. Zimmerle, and S. F. DiMarco, 2016: True colors of oceanography: Guidelines for effective and accurate colormap selection. Oceanography, 29, 9–13, https://doi.org/10.5670/oceanog.2016.66.
+
 ## Installation
 
 cmweather can be found on both PyPI and conda-forge, installable using
