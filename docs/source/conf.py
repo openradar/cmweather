@@ -48,13 +48,13 @@ extensions = [
     'nbsphinx',
     'sphinx_design',
     'myst_nb',
-    'ablog'
+    'ablog',
 ]
 
 sphinx_gallery_conf = {
-    "examples_dirs": "../../examples",
-    "gallery_dirs": "examples",
-    "abort_on_example_error": True,
+    'examples_dirs': '../../examples',
+    'gallery_dirs': 'examples',
+    'abort_on_example_error': True,
 }
 
 # MyST config
