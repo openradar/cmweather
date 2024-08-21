@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - numpydoc
+  - matplotlib
   - pydata-sphinx-theme
   - nbsphinx
   - ipython

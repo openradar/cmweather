@@ -10,6 +10,7 @@ hidden:
 ---
 usage
 api
+source/auto_examples/index.rst
 contributing
 ```
 
