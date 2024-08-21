@@ -42,8 +42,7 @@ def plot_color_gradients(cmap_category, cmap_list):
 
     for ax, cmap_name in zip(axs, cmap_list):
         ax.imshow(gradient, aspect='auto', cmap=f"{cmap_name}")
-
-        if cmap_name == 'plasmidis':  
+        if cmap_name == 'plasmidis':
             ax.text(
                 -0.01,
                 0.5,
@@ -83,8 +82,6 @@ plot_color_gradients(
     ['LangRainbow12', 'HomeyerRainbow', 'ChaseSpectral', 'SpectralExtended'],
 )
 
-plot_color_gradients(
-    'CVD-Friendly Velocity Colormaps', ['balance', 'twilight_shifted'])
+plot_color_gradients('CVD-Friendly Velocity Colormaps', ['balance', 'twilight_shifted'])
 
-plot_color_gradients(
-    'CVD-Friendly Polarization Colormaps', ['CM_depol', 'plasmidis'])
+plot_color_gradients('CVD-Friendly Polarization Colormaps', ['CM_depol', 'plasmidis'])
