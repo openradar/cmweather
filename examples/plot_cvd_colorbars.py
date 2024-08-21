@@ -23,7 +23,7 @@ matplotlib.rcParams.update({'font.family': 'Arial'})
 ######################################
 # **Plot the available colormaps**
 #
-# Let's see which colormaps are available directly from cmweather!
+# Let's see which CVD colormaps are available directly from cmweather!
 # We use a helper function from matplotlib to plot this.
 
 # Setup some helper functions and ranges to visualize our colormaps, from matplotlib
@@ -67,12 +67,18 @@ def plot_color_gradients(cmap_category, cmap_list):
     for ax in axs:
         ax.set_axis_off()
 
+
 ######################################
-# **Colorblind Friendly Colormaps**
+# **Color Vision Deficiency (CVD) Friendly Colormaps**
 #
-# We recommend starting with these colorblind friendly colormaps.
+# We recommend starting with these CVD friendly colormaps.
 # These colormaps are the most inclusive, and should be used where
 # possible.
+
+#######################################
+# **Reflectivity Colormaps
+#
+# These CVD colormaps were created for equivalent reflectivity factor.
 
 (r'$H_{2}$')
 plot_color_gradients(
@@ -80,6 +86,16 @@ plot_color_gradients(
     ['LangRainbow12', 'HomeyerRainbow', 'ChaseSpectral', 'SpectralExtended'],
 )
 
+########################################
+# **Velocity Colormaps
+#
+# These CVD colormaps were created for mean Doppler velocity.
+
 plot_color_gradients('CVD-Friendly Velocity Colormaps', ['balance', 'twilight_shifted'])
+
+########################################
+# **Polarization Colormaps
+# These CVD colormaps were created for polarization moments such as
+# differential reflectivity and depolarization ratio.
 
 plot_color_gradients('CVD-Friendly Polarization Colormaps', ['CM_depol', 'plasmidis'])
