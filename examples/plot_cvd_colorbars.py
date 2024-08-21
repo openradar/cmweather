@@ -12,11 +12,11 @@ print(__doc__)
 # Author: Max Grover and Zach Sherman
 # License: BSD 3 clause
 
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
-import matplotlib
-import cmweather
+import cmweather  # noqa
 
 matplotlib.rcParams.update({'font.family': 'Arial'})
 
@@ -41,15 +41,15 @@ def plot_color_gradients(cmap_category, cmap_list):
     axs[0].set_title(cmap_category, fontsize=14)
 
     for ax, cmap_name in zip(axs, cmap_list):
-        ax.imshow(gradient, aspect="auto", cmap=f"{cmap_name}")
+        ax.imshow(gradient, aspect='auto', cmap=f"{cmap_name}")
 
         if cmap_name == 'plasmidis':  
             ax.text(
                 -0.01,
                 0.5,
                 f"{'plasmidis'}",
-                va="center",
-                ha="right",
+                va='center',
+                ha='right',
                 fontsize=10,
                 transform=ax.transAxes,
             )
@@ -58,8 +58,8 @@ def plot_color_gradients(cmap_category, cmap_list):
                 -0.01,
                 0.5,
                 f"{cmap_name}",
-                va="center",
-                ha="right",
+                va='center',
+                ha='right',
                 fontsize=10,
                 transform=ax.transAxes,
             )
@@ -79,13 +79,12 @@ def plot_color_gradients(cmap_category, cmap_list):
 
 (r'$H_{2}$')
 plot_color_gradients(
-    r"CVD-Friendly $Z_{e}$ Colormaps",
-    ["LangRainbow12", "HomeyerRainbow", "ChaseSpectral", "SpectralExtended"])
+    r'CVD-Friendly $Z_{e}$ Colormaps',
+    ['LangRainbow12', 'HomeyerRainbow', 'ChaseSpectral', 'SpectralExtended'],
+)
 
 plot_color_gradients(
-    "CVD-Friendly Velocity Colormaps",
-    ["balance", "twilight_shifted"])
+    'CVD-Friendly Velocity Colormaps', ['balance', 'twilight_shifted'])
 
 plot_color_gradients(
-    "CVD-Friendly Polarization Colormaps",
-    ["CM_depol", "plasmidis"])
+    'CVD-Friendly Polarization Colormaps', ['CM_depol', 'plasmidis'])
