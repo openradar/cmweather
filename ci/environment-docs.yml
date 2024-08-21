@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - numpydoc
+  - matplotlib
   - pydata-sphinx-theme
   - nbsphinx
   - ipython
@@ -13,7 +14,11 @@ dependencies:
   - myst-nb
   - myst-parser
   - sphinx-design
+  - sphinx-gallery
+  - sphinx-copybutton
+  - sphinx<7.2
   - pip
   - pip:
+      - ablog
       - sphinxext-opengraph
       - -e ..
