@@ -66,8 +66,6 @@ def plot_color_gradients(cmap_category, cmap_list):
     # Turn off *all* ticks & spines, not just the ones with colormaps.
     for ax in axs:
         ax.set_axis_off()
-    plt.show()
-
 
 ######################################
 # **Colorblind Friendly Colormaps**
