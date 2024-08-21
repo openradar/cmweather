@@ -76,7 +76,7 @@ def plot_color_gradients(cmap_category, cmap_list):
 # possible.
 
 #######################################
-# **Reflectivity Colormaps
+# **Reflectivity Colormaps**
 #
 # These CVD colormaps were created for equivalent reflectivity factor.
 
@@ -87,14 +87,14 @@ plot_color_gradients(
 )
 
 ########################################
-# **Velocity Colormaps
+# **Velocity Colormaps**
 #
 # These CVD colormaps were created for mean Doppler velocity.
 
 plot_color_gradients('CVD-Friendly Velocity Colormaps', ['balance', 'twilight_shifted'])
 
 ########################################
-# **Polarization Colormaps
+# **Polarization Colormaps**
 # These CVD colormaps were created for polarization moments such as
 # differential reflectivity and depolarization ratio.
 
