@@ -13,7 +13,9 @@ dependencies:
   - myst-nb
   - myst-parser
   - sphinx-design
+  - sphinx-gallery
   - pip
   - pip:
+      - ablog
       - sphinxext-opengraph
       - -e ..

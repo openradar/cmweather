@@ -40,14 +40,22 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
     'sphinx.ext.extlinks',
+    'sphinx_gallery.gen_gallery',
     'numpydoc',
     'myst_nb',
     'IPython.sphinxext.ipython_console_highlighting',
     'IPython.sphinxext.ipython_directive',
     'nbsphinx',
     'sphinx_design',
+    'myst_nb',
+    'ablog'
 ]
 
+sphinx_gallery_conf = {
+    "examples_dirs": "../../examples",
+    "gallery_dirs": "examples",
+    "abort_on_example_error": True,
+}
 
 # MyST config
 myst_enable_extensions = ['amsmath', 'colon_fence', 'deflist', 'html_image']
