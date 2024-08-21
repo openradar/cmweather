@@ -95,6 +95,7 @@ plot_color_gradients('CVD-Friendly Velocity Colormaps', ['balance', 'twilight_sh
 
 ########################################
 # **Polarization Colormaps**
+#
 # These CVD colormaps were created for polarization moments such as
 # differential reflectivity and depolarization ratio.
 
