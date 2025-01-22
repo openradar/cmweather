@@ -17,6 +17,7 @@ dependencies:
   - sphinx-gallery
   - sphinx-copybutton
   - sphinx<7.2
+  - arm_pyart
   - pip
   - pip:
       - ablog
