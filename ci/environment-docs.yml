@@ -18,6 +18,7 @@ dependencies:
   - sphinx-copybutton
   - sphinx<7.2
   - arm_pyart
+  - colorspacious
   - pip
   - pip:
       - ablog
