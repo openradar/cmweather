@@ -12,9 +12,9 @@ print(__doc__)
 # Author: Zach Sherman
 # License: BSD 3 clause
 
-from open_radar_data import DATASETS
 import matplotlib.pyplot as plt
 import pyart
+from open_radar_data import DATASETS
 
 import cmweather  # noqa
 
@@ -24,14 +24,14 @@ import cmweather  # noqa
 # First we will read in the example data from the repository open_radar_data
 # by using a built in fetch function to download the data.
 
-file = DATASETS.fetch("110635.nc")
+file = DATASETS.fetch('110635.nc')
 
 # Read the data using pyart
 radar = pyart.io.read(file)
 
 # Apply a filter to remove ring artifact
 gatefilter = pyart.filters.GateFilter(radar)
-gatefilter.exclude_last_gates("reflectivity", n_gates=7)
+gatefilter.exclude_last_gates('reflectivity', n_gates=7)
 
 ######################################
 # **Color Vision Deficiency (CVD) Friendly Colormap HomeyerRainbow**
@@ -43,7 +43,13 @@ gatefilter.exclude_last_gates("reflectivity", n_gates=7)
 display = pyart.graph.RadarDisplay(radar)
 fig = plt.figure()
 display.plot(
-    "reflectivity", 0, vmin=-16.0, vmax=64, title="PPI", cmap="HomeyerRainbow", gatefilter=gatefilter,
+    'reflectivity',
+    0,
+    vmin=-16.0,
+    vmax=64,
+    title='PPI',
+    cmap='HomeyerRainbow',
+    gatefilter=gatefilter,
 )
 display.set_limits(ylim=[-150, 150], xlim=[-150, 150])
 plt.show()
@@ -58,7 +64,13 @@ plt.show()
 display = pyart.graph.RadarDisplay(radar)
 fig = plt.figure()
 display.plot(
-    "reflectivity", 0, vmin=-16.0, vmax=64, title="PPI", cmap="ChaseSpectral", gatefilter=gatefilter,
+    'reflectivity',
+    0,
+    vmin=-16.0,
+    vmax=64,
+    title='PPI',
+    cmap='ChaseSpectral',
+    gatefilter=gatefilter,
 )
 display.set_limits(ylim=[-150, 150], xlim=[-150, 150])
 plt.show()
