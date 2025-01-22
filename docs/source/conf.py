@@ -238,6 +238,14 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'cmweatherdoc'
 
+blog_baseurl = 'cmweather.readthedocs.io/en/latest/'
+blog_title = 'cmweather Blog'
+blog_path = 'blog'
+fontawesome_included = True
+blog_post_pattern = 'blog_posts/*/*'
+post_redirect_refresh = 1
+post_auto_image = 1
+post_auto_excerpt = 2
 
 # -- Options for LaTeX output --------------------------------------------------
 
